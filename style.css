@@ -1,0 +1,310 @@
+body {
+    background-image: url('images/Desktop%20-%202.png');
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    margin: 50% ;
+    overflow: hidden;
+}
+
+section {
+    background-color: #1A0C28;
+    border-radius: 30px;
+    position: absolute;
+    width: 650px;
+    height: 630px;
+    top: 45px; 
+    left: 54%;
+    border-color: #F8BD00;
+    border-style: outset;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+/* Checkbox */
+.remember-me label {
+    display: inline-flex;
+    align-items: center;
+    color: rgb(240, 41, 124);
+    position: relative;
+    left: 60px;
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Login options */
+.submit {
+    position: relative;
+    top: 20px;
+    left: 265px;
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    color: #1A0C28;
+    font-weight: 600;
+    background-color: white;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.submit:hover {
+    background-color: #9d9d9d;
+    color: rgb(248, 246, 245);
+}
+
+.alternative-login {
+    position: relative;
+    top: 180px;
+    left: 185px;
+    height: auto;
+    width: auto;
+}
+
+.google-login,
+.apple-login {
+    width: 200px;
+    height: 50px;
+    position: relative;
+    border-radius: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #1A0C28;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: none;
+    background-color: white;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.google-login {
+    bottom: 130px;
+    left: 30px;
+}
+
+.apple-login {
+    bottom: 15px;
+    right: 175px;
+}
+
+.google-login img,
+.apple-login img {
+    margin-left: 8px;
+    height: 20px;
+    width: auto;
+}
+
+.google-login:hover,
+.apple-login:hover {
+    background-color: #9d9d9d;
+    color: rgb(248, 246, 245);
+}
+
+/* One line hovers */
+.create-account {
+    position: relative;
+    top: 155px;
+    left: 150px;
+}
+
+.create-account a {
+    color: rgb(240, 41, 124);
+    transition: color 0.3s ease;
+}
+
+.create-account a:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.forgot-password {
+    position: relative;
+    left: 430px;
+    bottom: 115px;
+    color: rgb(240, 41, 124);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.forgot-password a {
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.forgot-password a:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Extras */
+h2 {
+    position: relative;
+    left: 100px;
+}
+
+.logo {
+    position: relative;
+    top: 15px;
+    right: 35px;
+}
+
+.one {
+    position: relative;
+    left: 65px;
+    height: 35px;
+    width: 500px;
+    bottom: 10px;
+}
+
+.two {
+    position: relative;
+    left: 65px;
+    height: 35px;
+    width: 500px;
+    bottom: 30px;
+}
+
+.icon {
+    position: relative;
+    bottom: 1000px;
+    right: 620px;
+    height: auto;
+    width: auto;
+}
+
+.or {
+    position: relative;
+    top: 160px;
+    left: 190px;
+    height: 25px;
+}
+
+/* Typebox */
+.username {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    position: relative;
+    color: rgb(240, 41, 124);
+    left: 65px;
+}
+
+.password {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    position: relative;
+    color: rgb(240, 41, 124);
+    left: 65px;
+    bottom: 20px;
+}
+/* Media queries for responsiveness */
+/* Mobile */
+/* Tablets */
+@media screen and (max-width: 1024px) and (min-width : 768px) {
+
+    section {
+        width: 80%;
+        height: 90%;
+        left: 10%;
+        top: 25px;
+    }
+    .text{
+        position: relative;
+        left: 5px;
+    }
+    h2{
+        position: relative;
+        bottom: 15px;
+    }
+    form{
+        position: relative;
+        left: 75px;
+        font-size: 11px;
+    }
+    .create-account{
+        position: relative;
+        left: 200px;
+        top: 150px;
+    }
+    .alternative-login{
+        left: 185px;
+    }
+    .google-login{
+        position: relative;
+        bottom: 140px;
+    }
+    .apple-login{
+        bottom: 30px;
+    }
+    .forgot-password{
+        left: 475px;
+        bottom: 8 0px;
+    }
+    .submit{
+        left: 265px;
+        top: 10px;
+    }
+    .or{
+        position: relative;
+        top: 148px;
+        left: 195px;
+    }
+    .remember-me label {
+        font-size: 11px; /* Adjust text size */
+        display: inline-flex;
+        align-items: center;
+        position: relative;
+        bottom: 6px;
+    }
+    .password{
+        position: relative;
+        
+        bottom: 10px;
+    }
+    .two{
+        bottom: 20px;
+    }
+}
+/* Desktops */
+@media screen and (max-width: 1440px) and (min-width : 1024px) {
+    body {
+        background-size: 110% 40%;
+        margin: 50% 20%;
+        overflow: hidden;
+    }
+
+    section {
+        background-color: #1A0C28;
+        border-radius: 30px;
+        position: absolute;
+        width: 650px;
+        height: 630px;
+        top: 30px; 
+        left: 60%;
+        border-color: #F8BD00;
+        border-style: outset;
+        transition: width 0.3s ease, left 0.3s ease;
+    }
+
+    .submit, .google-login, .apple-login {
+        width: 200px;
+    }
+
+    .forgot-password, .create-account {
+        left: 430px;
+        bottom: 115px;
+    }
+
+    h2, .one, .two, .username, .password {
+        left: 65px;
+    }
+
+    .alternative-login {
+        left: 185px;
+    }
+}
